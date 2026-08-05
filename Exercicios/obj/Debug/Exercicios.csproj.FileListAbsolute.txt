@@ -1,0 +1,8 @@
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\bin\Debug\Exercicios.exe.config
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\bin\Debug\Exercicios.exe
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\bin\Debug\Exercicios.pdb
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.csproj.AssemblyReference.cache
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.exe
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.pdb
+C:\Users\gabriel.mfernandes4\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.exe.config
