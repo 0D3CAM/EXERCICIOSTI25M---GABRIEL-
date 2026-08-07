@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Exercicios
 {
-     class ExercicioModel
+    class ExercicioModel
     {
         // área para declaração de variaveis globais
         private int num1;
@@ -15,19 +17,23 @@ namespace Exercicios
         private double num3;
         private double num4;
         private int resultado;
+        private int numero;
+        private int idade;
         //Método construtor: instancia valores na memória
-        public ExercicioModel() 
+        public ExercicioModel()
         {
             SetNum1(0);
             SetNum2(0);
             SetResultado(0);
+            SetIdade(0);
         }//fim do metodo construtor
 
-        public ExercicioModel(int num1, int num2) 
+        public ExercicioModel(int num1, int num2)
         {
             SetNum1(num1);
             SetNum2(num2);
             SetResultado(0);
+            
         }//fim do metodo construtor
 
         public ExercicioModel(double num1, double num2)
@@ -76,6 +82,17 @@ namespace Exercicios
             this.num4 = num4;
         }// fim do SetNum4
 
+        public int GetIdade()
+        {
+            return this.idade;
+        }
+
+        public void SetIdade(int idade)
+        { 
+            this.idade = idade; 
+        }//fim do SetIdade
+
+
 
 
 
@@ -92,7 +109,7 @@ namespace Exercicios
 
         public int Somar()
         {
-           return this.num1 + this.num2;
+            return this.num1 + this.num2;
         }//fim método soma
 
         public int Subtrair()
@@ -100,13 +117,13 @@ namespace Exercicios
             SetResultado(GetNum1() - GetNum2());
             return GetResultado();
         }
-        
+
         public int Multiplicar()
         {
             SetResultado(GetNum1() * GetNum2());
             return GetResultado();
         }
-        
+
         public double Dividir()
         {
             if (GetNum2() == 0)
@@ -123,7 +140,7 @@ namespace Exercicios
                 return GetResultado();
             }
         }// fim do dividir
-        
+
         public double Potencia(double bas, double expoente)
         {
             return Math.Pow(bas, expoente);
@@ -149,6 +166,58 @@ namespace Exercicios
             return Math.Sqrt(GetNum4());
         }
 
-        }// fim da classe
+        public string Exercicio01(int ano)
+        {
+            if (ano % 4 == 0)
+            {
+                return ano + " É bissexto! \n";
+            }
+            else
+            {
+                return ano + " Não é Bissexto \n";
+            }
+        }
+        public int Exercicio02(int numero)//Verifique se um número está entre 100 e 200. 
+
+        {
+            if (numero >= 100 && numero <= 200)
+            {
+                return -1;
+            }
+            else
+            {
+                return -2;
+            }
+        }
+
+        public string Exercicio03(int idade)
+        {
+            if (idade >= 16 && idade < 18)
+            {
+                return ("Pode votar, porém não obrigatório \n");
+            }
+            else if (idade >= 18)
+            {
+                return ("Voto Obrigatório \n");
+            }
+            else
+            {
+                return ("Não pode votar \n");
+            }    
+        }
+
+        public string Exercicio04(int num1, int num2, int num3)
+        {
+            if (num3 >= num1 && num3 <= num2)
+            {
+                return ("O número está dentro do intervalo");
+            }
+            else
+            {
+                return ("O número está fora do intervalo");
+            }
+        }
+    }// fim da classe
+
 }// fim do projeto
 

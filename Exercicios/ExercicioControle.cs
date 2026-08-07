@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -55,15 +56,18 @@ namespace Exercicios
         public void Menu()
         {
             Console.WriteLine("Escolha uma das opções abaixo: \n" +
-                              "0.Sair\n"                            +
-                              "1.Soma\n"                            +
-                              "2.Subtração\n"                        +
-                              "3.Divisão\n"                          +
-                              "4.Multiplicação\n"                    +
-                              "5.Potência\n"                        +
-                              "6.Potência com parâmetros\n"         +
-                              "7.Raiz\n"                             +
-                              "8.Raiz com parâmetros\n");
+                              "0.Sair\n" +
+                              "1.Soma\n" +
+                              "2.Subtração\n" +
+                              "3.Divisão\n" +
+                              "4.Multiplicação\n" +
+                              "5.Potência\n" +
+                              "6.Potência com parâmetros\n" +
+                              "7.Raiz\n" +
+                              "8.Raiz com parâmetros\n" +
+                              "9.Exercício 1 \n" +
+                              "10.Exercício 2 \n" +
+                              "11.Exercício 3");
                               
             SetOpcao(Convert.ToInt32(Console.ReadLine()));//Console.ReadLine so le string
             Console.Clear();//Limpa o console
@@ -136,13 +140,45 @@ namespace Exercicios
                         Console.WriteLine("A Raiz do primeiro número é: " + this.modelo.Raiz(num1));
                         Console.WriteLine("A Raiz do segundo número é: " + this.modelo.Raiz(num2));
                         break;
-                        default:
+                    case 9:
+                        Console.WriteLine("Digite o ano: ");
+                        int ano = Convert.ToInt32(Console.ReadLine());
+                        //Mostrar o resultado
+                        Console.WriteLine(this.modelo.Exercicio01(ano));
+                        break;
+                    case 10:
+                            Console.WriteLine("Digite um número: ");
+                            int numero = Convert.ToInt32(Console.ReadLine());
+                        if(this.modelo.Exercicio02(numero) == -1)
+                        {
+                            Console.WriteLine("Está no intervalo");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Não está no intervalo");
+                        }
+                        break;
+                    case 11:
+                        Console.WriteLine("Digite sua idade: ");
+                        int idade = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio03(idade)); 
+                        break;
+                    case 12:
+                        Console.WriteLine("Digite o primeiro número: ");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o segundo número: ");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o terceiro número: ");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
 
+                        break;
+                    default:
                         Console.WriteLine("Opção escolhida não é valida!");
                         break;
+
                 }//fim do escolha
             } while (GetOpcao() != 0);// fim do... while
         }//fim do metodo executar menu
 
     }// fim da classe 
-}// fim do projeto  
+}// fim do projeto
