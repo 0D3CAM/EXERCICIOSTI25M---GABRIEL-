@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Net.Mail;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Exercicios
@@ -67,7 +70,15 @@ namespace Exercicios
                               "8.Raiz com parâmetros\n" +
                               "9.Exercício 1 \n" +
                               "10.Exercício 2 \n" +
-                              "11.Exercício 3");
+                              "11.Exercício 3 \n" +
+                              "12.Exercício 4 \n"+
+                              "13.Exercício 5 \n"+
+                              "14.Exercício 6 \n"+
+                              "15.Exercício 7 \n"+
+                              "16.Exercício 8 \n"+
+                              "17.Exercício 9 \n"+
+                              "18.Exercício 10 \n"+
+                              "19.Exercício 11 \n");
                               
             SetOpcao(Convert.ToInt32(Console.ReadLine()));//Console.ReadLine so le string
             Console.Clear();//Limpa o console
@@ -119,11 +130,11 @@ namespace Exercicios
                     case 6:
                         Console.WriteLine("Informe a base: ");
                         double bas = Convert.ToDouble(Console.ReadLine());
-                        
+
                         Console.WriteLine("Informe o expoente: ");
                         double expoente = Convert.ToDouble(Console.ReadLine());
                         //Mostrar o resultado operação 
-                        Console.WriteLine("A potência é: " + this.modelo.Potencia (bas, expoente));
+                        Console.WriteLine("A potência é: " + this.modelo.Potencia(bas, expoente));
                         break;
                     case 7:
                         ColetarReal();
@@ -147,9 +158,9 @@ namespace Exercicios
                         Console.WriteLine(this.modelo.Exercicio01(ano));
                         break;
                     case 10:
-                            Console.WriteLine("Digite um número: ");
-                            int numero = Convert.ToInt32(Console.ReadLine());
-                        if(this.modelo.Exercicio02(numero) == -1)
+                        Console.WriteLine("Digite um número: ");
+                        int numero = Convert.ToInt32(Console.ReadLine());
+                        if (this.modelo.Exercicio02(numero) == -1)
                         {
                             Console.WriteLine("Está no intervalo");
                         }
@@ -161,7 +172,7 @@ namespace Exercicios
                     case 11:
                         Console.WriteLine("Digite sua idade: ");
                         int idade = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(this.modelo.Exercicio03(idade)); 
+                        Console.WriteLine(this.modelo.Exercicio03(idade));
                         break;
                     case 12:
                         Console.WriteLine("Digite o primeiro número: ");
@@ -169,7 +180,85 @@ namespace Exercicios
                         Console.WriteLine("Digite o segundo número: ");
                         num2 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Digite o terceiro número: ");
-                        int num3 = Convert.ToInt32(Console.ReadLine());
+                        double num3 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio04(num1, num2, num3));
+                        break;
+                    case 13:
+                        Console.WriteLine("Digite o primeiro número: ");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o segundo número: ");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o terceiro número: ");
+                        num3 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o quarto número: ");
+                        int num4 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o quinto número: ");
+                        int num5 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o sexto número: ");
+                        int num6 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o sétimo número: ");
+                        int num7 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o oitavo número: ");
+                        int num8 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o nono número: ");
+                        int num9 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o décimo número: ");
+                        int num10 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o número que deseja buscar: ");
+                        int buscar = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio05(num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, buscar));
+                        break;
+                    case 14:
+                        Console.WriteLine("Informe o tamanho do lado 1");
+                        int lado1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Informe o tamanho do lado 2");
+                        int lado2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Informe o tamanho do lado 3");
+                        int lado3 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio06(lado1, lado2, lado3));
+                        break;
+                    case 15:
+                        Console.WriteLine("Digite um número de 1 a 7");
+                        int dia = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio07(dia));
+                        break;
+                    case 16:
+                        string senha = "";
+                        do
+                        {
+                            Console.WriteLine("Digite sua senha: ");
+                            senha = Console.ReadLine();                      
+                            Console.WriteLine(this.modelo.Exercicio08(senha));
+                        } while(senha != "1234");
+                        break;
+                    case 17:
+                        Console.WriteLine("Digite um horário");
+                        DateTime hora1 = Convert.ToDateTime(Console.ReadLine());
+                        Console.WriteLine("Digite outro horário");
+                        DateTime hora2 = Convert.ToDateTime(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio09(hora1, hora2));
+                        break;
+                    case 18:
+                        Console.WriteLine("Digite um número");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite outro número");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio10(num1,num2));
+                        break;
+                    case 19:
+                        Console.WriteLine("Digite o número 1: ");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o número 2: ");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o número 3: ");
+                        num3 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o número 4: ");
+                        num4 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Digite o número 5: ");
+                        num5 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio11(num1, num2, num3, num4, num5));
+                        break;
+                    case 20:
 
                         break;
                     default:

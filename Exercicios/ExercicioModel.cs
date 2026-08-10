@@ -17,7 +17,6 @@ namespace Exercicios
         private double num3;
         private double num4;
         private int resultado;
-        private int numero;
         private int idade;
         //Método construtor: instancia valores na memória
         public ExercicioModel()
@@ -33,7 +32,7 @@ namespace Exercicios
             SetNum1(num1);
             SetNum2(num2);
             SetResultado(0);
-            
+
         }//fim do metodo construtor
 
         public ExercicioModel(double num1, double num2)
@@ -88,8 +87,8 @@ namespace Exercicios
         }
 
         public void SetIdade(int idade)
-        { 
-            this.idade = idade; 
+        {
+            this.idade = idade;
         }//fim do SetIdade
 
 
@@ -203,10 +202,10 @@ namespace Exercicios
             else
             {
                 return ("Não pode votar \n");
-            }    
+            }
         }
 
-        public string Exercicio04(int num1, int num2, int num3)
+        public string Exercicio04(double num1, double num2, double num3)
         {
             if (num3 >= num1 && num3 <= num2)
             {
@@ -217,7 +216,158 @@ namespace Exercicios
                 return ("O número está fora do intervalo");
             }
         }
-    }// fim da classe
 
+        public string Exercicio05(double num1, double num2, double num3, int num4, int num5, int num6, int num7, int num8, int num9, int num10, int buscar)
+        {
+            if (buscar == num1)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num2)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num3)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num4)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num5)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num6)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num7)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num8)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num9)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else if (buscar == num10)
+            {
+                return "O número " + buscar + " está no intervalo";
+            }
+            else
+            {
+                return "O número " + buscar + " não está no intervalo";
+            }
+        }
+
+        public string Exercicio06(int lado1, int lado2, int lado3)
+        {
+            if (lado1 <= 0 || lado2 <= 0 || lado3 <= 0)
+            {
+                return "Digite valores maiores que 0";
+            }
+            else if (lado1 == lado2 && lado2 == lado3)
+            {
+                return "O triângulo é equilátero \n";
+            }
+            else if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3)
+            {
+                return "O triângulo é escaleno \n";
+            }
+            else
+            {
+                return "O triângulo é isósceles \n";
+            }
+        }
+
+
+        public string Exercicio07(int dia)
+        {
+            if (dia == 1)
+            {
+                return "Domingo \n";
+            }
+            else if (dia == 2)
+            {
+                return "Segunda-Feira \n";
+            }
+            else if (dia == 3)
+            {
+                return "Terça-Feira \n";    
+            }
+            else if (dia == 4)
+            {
+                return "Quarta-Feira \n";
+            }
+            else if (dia == 5)
+            {
+                return "Quinta-Feira \n";
+            }
+            else if (dia == 6)
+            {
+                return "Sexta-Feira \n";
+            }
+            else if (dia == 7)
+            {
+                return "Sábado \n";
+            }
+            else
+            {
+                return "Dia inválido \n";
+            }
+        }
+        public string Exercicio08(string senha)
+        {
+        if (senha == "1234")
+            {
+                return "Senha correta.";
+            }
+        else
+            {
+                return "Senha inválida, tente novamente";
+            }
+        }
+        public string Exercicio09(DateTime hora1, DateTime hora2)
+        {
+
+            if (hora1 == hora2)
+            {
+                return "Horas iguais";
+            }
+            else if (hora1 > hora2) 
+            {
+                return ("Hora " + hora1 + " é mais tarde");
+            }
+            else
+            {
+                return ("Hora " + hora2 + " é mais tarde");
+            }
+        }
+
+        public string Exercicio10(double num1, double num2)
+        {
+            if (num1 > num2)
+            {
+                return "O "+ num1 + " é maior que  " + num2;
+            }
+            else
+            {
+                return "O " + num2 + " é maior que " + num1;
+            }    
+        }
+
+        public string Exercicio11(double num1, double num2, double num3, double num4, double num5)
+        {
+            double media = (num1 + num2 + num3 + num4 + num5) / 5;
+            return "A média é : " + media;
+        }
+
+
+    }// fim da classe
 }// fim do projeto
 

@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|solutionrelative:exercicios\\exerciciomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|c:\\users\\gabriel.mfernandes4\\source\\repos\\exercicios\\exercicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\exercicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|solutionrelative:exercicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,8 +34,7 @@
               "RelativeToolTip": "Exercicios\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T11:48:27.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:48:27.533Z"
             },
             {
               "$type": "Document",
@@ -43,9 +42,9 @@
               "Title": "ExercicioControle.cs",
               "DocumentMoniker": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioControle.cs",
               "RelativeDocumentMoniker": "Exercicios\\ExercicioControle.cs",
-              "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioControle.cs",
-              "RelativeToolTip": "Exercicios\\ExercicioControle.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEUAAAAxAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioControle.cs*",
+              "RelativeToolTip": "Exercicios\\ExercicioControle.cs*",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAgwOYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-06T11:53:43.783Z",
               "EditorCaption": ""
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "Exercicios\\ExercicioModel.cs",
               "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioModel.cs",
               "RelativeToolTip": "Exercicios\\ExercicioModel.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAYwMEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAFwBAAAAAAAAAAAAAHQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-06T11:53:36.036Z",
               "EditorCaption": ""
