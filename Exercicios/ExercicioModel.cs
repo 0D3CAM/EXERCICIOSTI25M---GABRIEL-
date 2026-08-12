@@ -367,7 +367,39 @@ namespace Exercicios
             return "A média é : " + media;
         }
 
+        public int Exercicio12(int num)
+        {
+            SetNum2(GetNum2() + num);
+            return GetNum2();
+        }
 
+        public string Exercicio13(string senha)
+        {
+            if (senha == "1234")
+            {
+                return "Senha correta.";
+            }
+            else
+            {
+                return "Senha incorreta, tente novamente";
+            }
+            
+        }
+
+        public int Exercicio14(int num, int maior, int menor) 
+        {
+            
+            if (num > maior)
+            {
+                maior = num;     
+            }
+            else if (num < menor)
+            {
+                menor = num;
+            }
+            return num;
+        }
+  
     }// fim da classe
 }// fim do projeto
 

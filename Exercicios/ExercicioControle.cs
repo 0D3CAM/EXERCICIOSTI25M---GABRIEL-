@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Net.Mail;
@@ -259,7 +260,49 @@ namespace Exercicios
                         Console.WriteLine(this.modelo.Exercicio11(num1, num2, num3, num4, num5));
                         break;
                     case 20:
-
+                        int resultado = 0;
+                        int num = 0;
+                        do {
+                            Console.WriteLine("Digite um número:");
+                            num = Convert.ToInt32(Console.ReadLine());
+                            resultado = this.modelo.Exercicio12(num);
+                            Console.WriteLine(resultado);
+                        }
+                        while(resultado < 100);
+                        Console.WriteLine("O valor final é: " + resultado);
+                        break;
+                        
+                    case 21:
+                        int contador = 0;
+                        do
+                        {
+                           Console.WriteLine("Digite sua senha: ");
+                           senha = Convert.ToString(Console.ReadLine());
+                           Console.WriteLine(this.modelo.Exercicio08(senha));
+                            if (senha == "1234")
+                            {
+                                break;         
+                            }
+                            else
+                            {
+                                contador += 1;
+                            }
+                        } while (contador < 3);
+                        break;
+                    case 22:
+                        contador = 0;
+                        int maior;
+                        int menor;
+                        do
+                        {
+                            Console.WriteLine("Digite um número");
+                            num = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine(this.modelo.Exercicio14(num, maior, menor));
+                            contador++;
+                        }
+                        while (contador < 10);
+                        Console.WriteLine("O maior número digitado foi: " + maior);
+                        Console.WriteLine("O menor número digitado foi: " + menor);
                         break;
                     default:
                         Console.WriteLine("Opção escolhida não é valida!");

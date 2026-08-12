@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|c:\\users\\gabriel.mfernandes4\\source\\repos\\exercicios\\exercicios\\exerciciocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\exercicios\\exerciciocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|solutionrelative:exercicios\\exerciciocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\exercicios\\exerciciomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|c:\\users\\gabriel.mfernandes4\\source\\repos\\exercicios\\exercicios\\exerciciomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD814142-26DC-41A7-AB5F-F9787539E090}|Exercicios\\Exercicios.csproj|solutionrelative:exercicios\\exerciciomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,29 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\Program.cs",
-              "RelativeDocumentMoniker": "Exercicios\\Program.cs",
-              "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\Program.cs",
-              "RelativeToolTip": "Exercicios\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T11:48:27.533Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ExercicioControle.cs",
               "DocumentMoniker": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioControle.cs",
               "RelativeDocumentMoniker": "Exercicios\\ExercicioControle.cs",
-              "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioControle.cs*",
-              "RelativeToolTip": "Exercicios\\ExercicioControle.cs*",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAgwOYAAAAyAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioControle.cs",
+              "RelativeToolTip": "Exercicios\\ExercicioControle.cs",
+              "ViewState": "AgIAACEBAAAAAAAAAAAgwCsBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-06T11:53:43.783Z",
               "EditorCaption": ""
@@ -57,9 +45,22 @@
               "RelativeDocumentMoniker": "Exercicios\\ExercicioModel.cs",
               "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\ExercicioModel.cs",
               "RelativeToolTip": "Exercicios\\ExercicioModel.cs",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAAAHQBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMBAAAAAAAAAAAQwIUBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-06T11:53:36.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\Program.cs",
+              "RelativeDocumentMoniker": "Exercicios\\Program.cs",
+              "ToolTip": "C:\\Users\\gabriel.mfernandes4\\source\\repos\\Exercicios\\Exercicios\\Program.cs",
+              "RelativeToolTip": "Exercicios\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T11:48:27.533Z",
               "EditorCaption": ""
             }
           ]
