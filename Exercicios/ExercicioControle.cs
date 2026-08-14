@@ -291,20 +291,51 @@ namespace Exercicios
                         break;
                     case 22:
                         contador = 0;
-                        int maior;
-                        int menor;
+
                         do
                         {
                             Console.WriteLine("Digite um número");
                             num = Convert.ToInt32(Console.ReadLine());
-                            Console.WriteLine(this.modelo.Exercicio14(num, maior, menor));
-                            contador++;
+                            Console.WriteLine(this.modelo.Exercicio01(num));      
                         }
                         while (contador < 10);
-                        Console.WriteLine("O maior número digitado foi: " + maior);
-                        Console.WriteLine("O menor número digitado foi: " + menor);
+                        Console.WriteLine("O maior número digitado foi: " );
+                        Console.WriteLine("O menor número digitado foi: " );
                         break;
-                    default:
+                    case 23:
+                        Console.WriteLine("Digite um número: "); 
+                        numero = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Multiplo(numero));
+                        break;
+                    case 24:
+                        Console.WriteLine("Digite um número: "); 
+                        numero = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.MultiploFor(numero));
+                        break;
+                    case 25:
+                        Console.WriteLine("Digite um número: ");
+                        numero = Convert.ToInt32(Console.ReadLine());
+                        if(this.modelo.Palindromo(numero) == false)
+                        {
+                            Console.WriteLine("Não é palíndromo");
+                        }
+                        else
+                        {
+                            Console.WriteLine("É palindromo");
+                        }
+                            break;
+                case 26:
+                            this.modelo.ContarParImpar();
+                            break;
+
+                case 27:
+                        Console.WriteLine("Informe um número: ");
+                        string numeroTexto = Console.ReadLine();
+                        Console.WriteLine("O número possui: " + this.modelo.ContarNumero(numeroTexto));
+                        break;
+                case 28:
+                        
+                        default:
                         Console.WriteLine("Opção escolhida não é valida!");
                         break;
 

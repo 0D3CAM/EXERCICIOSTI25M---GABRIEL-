@@ -176,6 +176,37 @@ namespace Exercicios
                 return ano + " Não é Bissexto \n";
             }
         }
+
+        public string Multiplo(int numero)
+        {
+            //Contador
+            int i = 1;// criando contador e definindo ponto de partida
+            string resultado = "";
+            while (i < 100)
+            {
+                if (numero % i == 0)
+                {
+                    resultado += i + "\n";
+                }
+                //Rodar o contador
+                i++;
+            }// fim do while
+            return resultado;
+        }
+
+        public string MultiploFor(int numero)
+        {
+            string resultado = "";
+            for (int i = 1; i < 100; i++)
+            {
+                if (numero % i == 0)
+                {
+                    resultado += i + "\n";
+                }
+            }
+            return resultado;
+        }
+
         public int Exercicio02(int numero)//Verifique se um número está entre 100 e 200. 
 
         {
@@ -298,7 +329,7 @@ namespace Exercicios
             }
             else if (dia == 3)
             {
-                return "Terça-Feira \n";    
+                return "Terça-Feira \n";
             }
             else if (dia == 4)
             {
@@ -323,11 +354,11 @@ namespace Exercicios
         }
         public string Exercicio08(string senha)
         {
-        if (senha == "1234")
+            if (senha == "1234")
             {
                 return "Senha correta.";
             }
-        else
+            else
             {
                 return "Senha inválida, tente novamente";
             }
@@ -339,7 +370,7 @@ namespace Exercicios
             {
                 return "Horas iguais";
             }
-            else if (hora1 > hora2) 
+            else if (hora1 > hora2)
             {
                 return ("Hora " + hora1 + " é mais tarde");
             }
@@ -353,12 +384,12 @@ namespace Exercicios
         {
             if (num1 > num2)
             {
-                return "O "+ num1 + " é maior que  " + num2;
+                return "O " + num1 + " é maior que  " + num2;
             }
             else
             {
                 return "O " + num2 + " é maior que " + num1;
-            }    
+            }
         }
 
         public string Exercicio11(double num1, double num2, double num3, double num4, double num5)
@@ -383,15 +414,15 @@ namespace Exercicios
             {
                 return "Senha incorreta, tente novamente";
             }
-            
+
         }
 
-        public int Exercicio14(int num, int maior, int menor) 
+        public int Exercicio14(int num, int maior, int menor)
         {
-            
+
             if (num > maior)
             {
-                maior = num;     
+                maior = num;
             }
             else if (num < menor)
             {
@@ -399,7 +430,51 @@ namespace Exercicios
             }
             return num;
         }
-  
+
+        public bool Palindromo(int numero)
+        {
+            string palin = numero + "";
+            int fim = palin.Length - 1;
+            int inicio = 0;
+            while (inicio < fim)
+            {
+                if (palin.Substring(inicio, 1) != palin.Substring(fim, 1))
+                {
+                    return false;
+                }
+                inicio++;
+                fim--;
+            }
+            return true;
+        }// fim método
+
+        public void ContarParImpar()
+        {
+            int contarPar = 0;
+            int contarImpar = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write(i + 1 + "º número: ");
+                int num = Convert.ToInt32(Console.ReadLine());
+                //Comparações
+                if (num % 2 == 0)
+                {
+                    contarPar++;
+                }
+                else
+                {
+                    contarImpar++;
+                }
+            }
+            Console.WriteLine("A quantidade de pares é: " + contarPar + " e a quantidade de ímpares é: " + contarImpar);
+        }
+        public int ContarNumero(string num) 
+        {
+            return num.Length;
+        }
     }// fim da classe
+     
+    
 }// fim do projeto
 
