@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Mail;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -365,7 +366,6 @@ namespace Exercicios
         }
         public string Exercicio09(DateTime hora1, DateTime hora2)
         {
-
             if (hora1 == hora2)
             {
                 return "Horas iguais";
@@ -469,12 +469,79 @@ namespace Exercicios
             }
             Console.WriteLine("A quantidade de pares é: " + contarPar + " e a quantidade de ímpares é: " + contarImpar);
         }
-        public int ContarNumero(string num) 
+        public int ContarNumero(string num)
         {
             return num.Length;
         }
+
+        public void MediaMaioridade()
+        {
+            int contarMaioridade = 0;
+            int somaIdades = 0;
+
+            for (int i = 0; i <= 4; i++)
+            {
+                Console.WriteLine("Digite a idade " + (i + 1) + ":");
+                int idade = Convert.ToInt32(Console.ReadLine());
+
+                if (idade >= 18)
+                {
+                    somaIdades += idade;
+                    contarMaioridade++;
+                }
+            }
+
+            Console.WriteLine("A média é " + (somaIdades / 5));
+        }
+
+        public string NumNegativo()
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                Console.WriteLine("Digite o " + (i + 1) + " º numero");
+                double num = Convert.ToDouble(Console.ReadLine());
+                if (num < 0)
+                {
+                    Console.WriteLine("Número negativo.");
+                    return "";
+                }
+            }
+            return "Limite de 1000 números atingido";
+        }
+
+        public string ParesAte()
+        {
+            Console.WriteLine("Digite um numero: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= num; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine($"O número par é: " + i + " e sua potência é: " + (i * i));
+                }
+            }
+
+            return "";
+        }
+
+        public string CelsiusFaren()
+        {
+            double celsius = 0;
+            do
+            {
+                Console.WriteLine("Digite a temperatura em º Celsius: ");
+                celsius = Convert.ToDouble(Console.ReadLine());
+                double fahrenheit = ((celsius * (9.0 / 5)) + 32);
+
+                Console.WriteLine("A temperatura em graus Fahrenheit é: " + fahrenheit);
+                
+            } while (celsius != 0);
+
+            return "";
+        }
+
+
     }// fim da classe
-     
-    
 }// fim do projeto
 

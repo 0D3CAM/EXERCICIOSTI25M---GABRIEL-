@@ -324,17 +324,26 @@ namespace Exercicios
                             Console.WriteLine("É palindromo");
                         }
                             break;
-                case 26:
+                    case 26:
                             this.modelo.ContarParImpar();
                             break;
-
-                case 27:
-                        Console.WriteLine("Informe um número: ");
-                        string numeroTexto = Console.ReadLine();
-                        Console.WriteLine("O número possui: " + this.modelo.ContarNumero(numeroTexto));
+                    case 27:
+                            Console.WriteLine("Informe um número: ");
+                            string numeroTexto = Console.ReadLine();
+                            Console.WriteLine("O número possui: " + this.modelo.ContarNumero(numeroTexto));
                         break;
-                case 28:
-                        
+                    case 28:
+                        this.modelo.MediaMaioridade();
+                        break;
+                    case 29:
+                        this.modelo.NumNegativo();
+                        break;
+                    case 30:
+                        this.modelo.ParesAte();
+                        break;
+                    case 31:
+                        this.modelo.CelsiusFaren();
+                        break;
                         default:
                         Console.WriteLine("Opção escolhida não é valida!");
                         break;
